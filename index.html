@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-     <select id="changecolor">
-    <option value=""> Select Color </option>
-    <option value="black">Black</option>
-    <option value="blue">Blue</option>
-    <option value="green">Green</option>
-    <option value="yellow">Yellow</option>
-  </select>
-
-</body>
-<script src="./index.js">
-
-</script>
+  </head>
+  <body>
+    <div>
+        <select onchange="clrChnge(value)" name="Background-Color">
+          <option class="options" value="" disabled selected>
+            Choose a Background color
+          </option>
+          <option value="cyan">Cyan</option>
+          <option value="black">Black</option>
+          <option value="green">Green</option>
+          <option value="wheat">Wheat</option>
+          <option value="lavender">Lavender</option>
+        </select>
+    </div>
+  </body>
+  <script src="./index.js"></script>
 </html>

@@ -1,6 +1,10 @@
+const clrChnge = (value) => {
+  let newColors = (document.body.style.backgroundColor = value);
 
+  newColors = JSON.stringify(newColors);
+  sessionStorage.setItem("colorSelected", newColors);
+};
 
-  const changecolor = document.getElementById("changecolor");
-
-    // Restore background from sessionStorage
-    const savedColor = sessionStorage.getItem("bgColor");
+let outPut = sessionStorage.getItem("colorSelected");
+outPut = JSON.parse(outPut);
+document.body.style.backgroundColor = outPut;
